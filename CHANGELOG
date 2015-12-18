@@ -10,4 +10,5 @@ master:
   { changelog : 'added custom directory on Templates Phishing fixed #10' },
   { changelog : 'added Qthread on scanner AP functions' },
   { changelog : 'changed structure files' },
+  { changelog : 'frist an test hehehehe' },
 ]
