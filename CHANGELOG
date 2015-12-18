@@ -11,4 +11,5 @@ master:
   { changelog : 'added Qthread on scanner AP functions' },
   { changelog : 'changed structure files' },
   { changelog : 'frist an test hehehehe' },
+  { changelog : 'update os testes da quebrada' },
 ]
