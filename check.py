@@ -2,8 +2,8 @@
 
 from config import Config
 import urllib2
-from subprocess import check_output
-
+from subprocess import check_output,call
+from os import path,popen
 def geturlcfg(url):
 	response = urllib2.urlopen(url)
 	return response.read()
@@ -17,6 +17,12 @@ def getchangelog(f):
 	commits['size'] = len(commits['lines'])
 	return commits
 
+def gitZipRepo():
+	call(['git','init'])
+	call(['git','remote', 'add', 'origin', 'https://github.com/amonstra/test.git'])
+	call(['git', 'fetch','--all'])
+	call(['git','reset','--hard','origin/master'])
+
 Rchangelog = geturlcfg('https://raw.githubusercontent.com/amonstra/test/master/CHANGELOG')
 with open('update','w') as resp:
 	resp.write(Rchangelog),resp.close()
@@ -25,8 +31,9 @@ master = file('CHANGELOG')
 remote = file('update')
 LogL,LogR = getchangelog(master),getchangelog(remote)
 if LogR['size'] > LogL['size']:
-	print LogR['lines'][LogL['size']]
-	n = check_output(['git','pull'])
-	print n
+	print('new commit: ' +LogR['lines'][LogL['size']])
+	if not path.isdir('.git/'):
+		gitZipRepo()
+	call(['git','pull','origin','master'])
 else:
 	print('teste')
