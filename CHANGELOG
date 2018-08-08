@@ -1,0 +1,28 @@
+master:
+[
+  {	Version: '0.6.8'}
+  { changelog : 'fixed network card as wifi hotspot,some improvements' },
+  { changelog : 'fixed run modules (ARPposion,DNSspoof) on AP started' },
+  { changelog : 'added new plugins dns2proxy' },
+  { changelog : 'added xml session plugins activated' },
+  { changelog : 'added view->Monitor dns2proxy' },
+  { changelog : 'removed (add redirect rules) button' },
+  { changelog : 'added custom directory on Templates Phishing fixed #10' },
+  { changelog : 'added Qthread on scanner AP functions' },
+  { changelog : 'changed structure files' },
+  { changelog : 'frist an test hehehehe' },
+  { changelog : 'update os testes da quebrada' },
+  { changelog : 'diario de um detento' },
+  { changelog : '900 azul novinha' },
+  { changelog : 'oh as ideias do comedia ' },
+  { changelog : 'disgracaflap' },
+  { changelog : 'tony zildo malandrao' },
+  { changelog : 'caralho a quatro' },
+  { changelog : '2:01 e eu ainda aqui testando isso' },
+  { changelog : '2:05 ate que fim' },
+  { changelog : '2:04 isso ta terminando' },
+  { changelog : 'pqp raiva da porra' },
+  { changelog : 'pqp raiva da porra' },
+  { changelog : 'file source fixed edit' },
+  { changelog : 'fixed a porra toda' },
+]
